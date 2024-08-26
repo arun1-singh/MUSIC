@@ -1,5 +1,3 @@
-console.log('Lets write javascript');
-
 let currentSong = new Audio();
 let songs;
 let currFolder;
@@ -129,7 +127,7 @@ async function displayAlbums(){
 }
 
 async function main(){
-await getSongs("songs/sgs")
+await getSongs("/songs/sgs")
 playMusic(songs[0],true)
 
 
