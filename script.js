@@ -14,7 +14,7 @@ function secondsToMinutesSeconds(seconds) {
     const formattedMinutes = String(minutes).padStart(2, '0');
     const formattedSeconds = String(remainingSeconds).padStart(2, '0');
 
-    return ${formattedMinutes}:${formattedSeconds};
+    return ${formattedMinutes}:${formattedSeconds}
 }
 
 async function getSongs(folder) {
@@ -117,7 +117,7 @@ async function displayAlbums() {
 
 async function main() {
     // Get the list of all the songs
-    await getSongs("songs/ncs")
+    await getSongs("songs/sgs")
     playMusic(songs[0], true)
 
     // Display all the albums on the page
